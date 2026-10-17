@@ -1,0 +1,13 @@
+question_id,question,question_type,medical_required,legal_required,notes
+Q001,What are the AAOS recommendations for hip fracture management in older adults?,medical,1,0,AAOS hip fracture CPG
+Q002,What is the recommended timing of surgery for hip fracture in older adults?,medical,1,0,AAOS hip fracture CPG
+Q003,What anesthesia options are recommended for hip fracture surgery?,medical,1,0,AAOS hip fracture CPG
+Q004,What are the VTE prophylaxis recommendations after hip fracture surgery?,medical,1,0,AAOS hip fracture CPG
+Q005,What information should generally be included in surgical informed consent?,legal,0,1,CMS informed consent guidance
+Q006,Who can sign the surgical informed consent form?,legal,0,1,CMS informed consent guidance
+Q007,What are the requirements for documenting informed consent for surgery?,legal,0,1,CMS informed consent guidance
+Q008,What are the special considerations for informed consent when residents perform parts of the surgery?,legal,0,1,CMS informed consent guidance
+Q009,What clinical considerations and informed consent information should be addressed before surgical management of a hip fracture in an older adult?,cross,1,1,AAOS + CMS
+Q010,What are the surgical treatment options for hip fracture and what consent information should patients receive?,cross,1,1,AAOS + CMS
+Q011,How should surgical risks and benefits be discussed with older adults undergoing hip fracture surgery?,cross,1,1,AAOS + CMS
+Q012,What are the preoperative considerations and consent requirements for hip fracture surgery in older adults?,cross,1,1,AAOS + CMS

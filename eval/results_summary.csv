@@ -1,0 +1,4 @@
+﻿Mode,Required Medical Coverage,Required Legal Coverage,Unnecessary Medical Retrieval,Unnecessary Legal Retrieval,Cross-domain Medical Avg,Cross-domain Legal Avg,Routing Accuracy
+ortho_single,8/8,4/8,4,0,6.00,0.00,n/a
+dual,8/8,8/8,12,12,3.00,3.00,n/a
+routed,8/8,8/8,3,0,3.00,3.00,11/12

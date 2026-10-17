@@ -1,0 +1,16 @@
+# 环境变量 (绝对要排除)
+.env
+.env.example
+
+# 隐私脚本
+INTERVIEW_DEMO.md
+
+# 本地数据与大文件
+qdrant_storage/
+ollama_data/
+data/*_raw/*.pdf
+data/part493.html
+data/*.md
+data/raven.db
+.pytest_cache/
+__pycache__/
