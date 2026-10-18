@@ -1,0 +1,30 @@
+# Environment variables
+.env
+
+# Local / private notes
+INTERVIEW_DEMO.md
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local vector/model state
+qdrant_storage/
+ollama_data/
+
+# Source documents and derived text
+data/medical_raw/
+data/legal_raw/
+data/*_raw/
+data/*.pdf
+data/*.html
+data/*.md
+!data/README.md
+data/*.db
+data/*_segments.csv
+data/segments.csv
+
+# Evaluation outputs may contain retrieved source text
+eval/runs/

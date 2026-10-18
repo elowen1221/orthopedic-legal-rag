@@ -1,0 +1,25 @@
+# Core
+python-dotenv>=1.0.0
+requests>=2.31.0
+pandas>=2.0.0
+
+# Vector DB
+qdrant-client>=1.9.0
+
+# Embedding / LLM
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+langchain-ollama>=0.2.0
+tiktoken>=0.7.0
+
+# PDF 处理
+pymupdf>=1.24.0
+
+# Web UI
+streamlit>=1.40.0
+
+# API
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
