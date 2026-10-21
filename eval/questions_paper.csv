@@ -1,0 +1,46 @@
+question_id,question,question_type,medical_required,legal_required,answerable,gold_medical_source_ids,gold_legal_source_ids,annotation_status,annotation_notes
+Q001,What are the AAOS recommendations for hip fracture management in older adults?,medical,1,0,1,AAOS_Hip_Fracture_2021,,REVIEWED,AI pre-annotated
+Q002,What is the recommended timing of surgery for hip fracture?,medical,1,0,1,AAOS_Hip_Fracture_2021,,REVIEWED,AI pre-annotated
+Q003,What anesthesia options are recommended for hip fracture surgery?,medical,1,0,1,AAOS_Hip_Fracture_2021,,REVIEWED,AI pre-annotated
+Q004,What are the VTE prophylaxis recommendations after hip fracture surgery?,medical,1,0,1,AAOS_Hip_Fracture_2021,,REVIEWED,AI pre-annotated
+Q005,How should first-time lateral patellar dislocation be assessed?,medical,1,0,1,BOA_BOAST_FTLPD,,REVIEWED,AI pre-annotated
+Q006,What are the BOAST guidelines for compartment syndrome?,medical,1,0,1,BOA_BOAST_Compartment_Syndrome,,REVIEWED,AI pre-annotated
+Q007,What is the recommended treatment for compartment syndrome?,medical,1,0,1,BOA_BOAST_Compartment_Syndrome,,REVIEWED,AI pre-annotated
+Q008,What are the clinical outcomes for older adults with hip fractures?,medical,1,0,1,AAOS_Hip_Fracture_2021,,REVIEWED,AI pre-annotated
+Q009,What imaging is recommended for lateral patellar dislocation?,medical,1,0,1,BOA_BOAST_FTLPD,,REVIEWED,AI pre-annotated
+Q010,How do you diagnose compartment syndrome clinically?,medical,1,0,1,BOA_BOAST_Compartment_Syndrome,,REVIEWED,AI pre-annotated
+Q011,What are the surgical timing recommendations for elderly hip fracture patients?,medical,1,0,1,AAOS_Hip_Fracture_2021,,REVIEWED,AI pre-annotated
+Q012,What are the recommendations for rehabilitation after hip fracture?,medical,1,0,1,AAOS_Hip_Fracture_2021,,REVIEWED,AI pre-annotated
+Q013,What are the BOAST guidelines for managing acute compartment syndrome?,medical,1,0,1,BOA_BOAST_Compartment_Syndrome,,REVIEWED,AI pre-annotated
+Q014,What are the indications for surgery in hip fractures?,medical,1,0,1,AAOS_Hip_Fracture_2021,,REVIEWED,AI pre-annotated
+Q015,What are the risks of lateral patellar dislocation?,medical,1,0,1,BOA_BOAST_FTLPD,,REVIEWED,AI pre-annotated
+Q016,What information should generally be included in surgical informed consent?,legal,0,1,1,,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q017,Who can sign the surgical informed consent form?,legal,0,1,1,,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q018,What are the requirements for documenting informed consent for surgery?,legal,0,1,1,,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q019,What are the special considerations for informed consent when residents perform surgery?,legal,0,1,1,,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q020,What happened in the Bender v. Durrani case?,legal,0,1,1,,Case_Bender_v_Durrani,REVIEWED,AI pre-annotated
+Q021,What was the malpractice claim in Sobin v. Orthopaedic Sports Specialists?,legal,0,1,1,,Case_Sobin_v_Orthopaedic,REVIEWED,AI pre-annotated
+Q022,What is the legal standard for informed consent in surgical cases?,legal,0,1,1,,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q023,What were the allegations of fraud in the Bender v. Durrani case?,legal,0,1,1,,Case_Bender_v_Durrani,REVIEWED,AI pre-annotated
+Q024,What were the consequences of the DVT in Sobin v. Orthopaedic Sports Specialists?,legal,0,1,1,,Case_Sobin_v_Orthopaedic,REVIEWED,AI pre-annotated
+Q025,What does CMS guidance say about discharge planning in informed consent?,legal,0,1,1,,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q026,How should state law be considered in CMS surgical informed consent?,legal,0,1,1,,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q027,What were the patient outcomes in the Sobin case?,legal,0,1,1,,Case_Sobin_v_Orthopaedic,REVIEWED,AI pre-annotated
+Q028,What constitutes medical malpractice according to these cases?,legal,0,1,1,,"Case_Bender_v_Durrani,Case_Sobin_v_Orthopaedic",REVIEWED,AI pre-annotated
+Q029,What are the documentation requirements for informed consent according to CMS?,legal,0,1,1,,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q030,What did the court find regarding the surgeon's duty in Bender v. Durrani?,legal,0,1,1,,Case_Bender_v_Durrani,REVIEWED,AI pre-annotated
+Q031,What clinical considerations and informed consent information should be addressed before surgical management of a hip fracture?,cross,1,1,1,AAOS_Hip_Fracture_2021,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q032,What are the surgical treatment options for hip fracture and what consent information should patients receive?,cross,1,1,1,AAOS_Hip_Fracture_2021,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q033,How should surgical risks and benefits be discussed with older adults undergoing hip fracture surgery?,cross,1,1,1,AAOS_Hip_Fracture_2021,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q034,What are the preoperative considerations and consent requirements for hip fracture surgery?,cross,1,1,1,AAOS_Hip_Fracture_2021,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q035,How does the standard of care for compartment syndrome relate to malpractice liability?,cross,1,1,1,BOA_BOAST_Compartment_Syndrome,"Case_Bender_v_Durrani,Case_Sobin_v_Orthopaedic",REVIEWED,AI pre-annotated
+Q036,What are the clinical signs of DVT after orthopedic surgery and what legal duties apply?,cross,1,1,1,AAOS_Hip_Fracture_2021,Case_Sobin_v_Orthopaedic,REVIEWED,AI pre-annotated
+Q037,What are the BOAST recommendations for compartment syndrome and what legal standard applies?,cross,1,1,1,BOA_BOAST_Compartment_Syndrome,"Case_Bender_v_Durrani,Case_Sobin_v_Orthopaedic",REVIEWED,AI pre-annotated
+Q038,How should informed consent address the risks of lateral patellar dislocation surgery?,cross,1,1,1,BOA_BOAST_FTLPD,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q039,What are the clinical indications for hip fracture surgery and the corresponding legal consent duties?,cross,1,1,1,AAOS_Hip_Fracture_2021,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q040,What did the Sobin case reveal about clinical monitoring for DVT and legal malpractice?,cross,1,1,1,AAOS_Hip_Fracture_2021,Case_Sobin_v_Orthopaedic,REVIEWED,AI pre-annotated
+Q041,How do informed consent laws apply to the surgical treatment of compartment syndrome?,cross,1,1,1,BOA_BOAST_Compartment_Syndrome,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q042,What are the clinical outcomes for hip fracture patients and what legal risks arise from improper consent?,cross,1,1,1,AAOS_Hip_Fracture_2021,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q043,What clinical factors are considered in patellar dislocation and how do they affect informed consent?,cross,1,1,1,BOA_BOAST_FTLPD,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q044,How should the risks of hip fracture surgery be communicated according to both medical and legal standards?,cross,1,1,1,AAOS_Hip_Fracture_2021,CMS_Informed_Consent,REVIEWED,AI pre-annotated
+Q045,What are the BOAST guidelines for compartment syndrome and what legal standard applies to diagnosis failure?,cross,1,1,1,BOA_BOAST_Compartment_Syndrome,"Case_Bender_v_Durrani,Case_Sobin_v_Orthopaedic",REVIEWED,AI pre-annotated

@@ -1,0 +1,7 @@
+source_id,domain,title,filename,document_type,organization_or_court,jurisdiction,year,url_or_origin,copyright_status,included_in_public_repo,notes
+AAOS_Hip_Fracture_2021,medical,Management of Hip Fractures in Older Adults,hipfxcpg_2021.pdf,Clinical Practice Guideline,AAOS,US,2021,https://www.aaos.org/,Copyrighted,False,Primary clinical guideline
+AAOS_Boast_FTLPD,medical,First-time Lateral Patellar Dislocation,BOAST-FTLPD.pdf,Professional Guideline,BOA,UK,2023,https://www.boa.ac.uk/,Copyrighted,False,BOAST standards
+AAOS_Boast_Compartment,medical,Compartment Syndrome,BOASTCompartmentSyndromeSeptember-2025.pdf,Professional Guideline,BOA,UK,2025,https://www.boa.ac.uk/,Copyrighted,False,BOAST standards
+CMS_Informed_Consent,legal,CMS Surgical Informed Consent Guidance,cms_surgical_informed_consent.pdf,Regulatory Guidance,CMS,US,UNKNOWN,https://www.cms.gov/,Public Domain,True,Federal guidance
+Bender_v_Durrani,legal,Bender v. Durrani,bender_v._durrani.pdf,Case Law,US Court,US,UNKNOWN,CourtListener,Public Domain,True,Malpractice and fraud
+Sobin_v_Orthopaedic,legal,Sobin v. Orthopaedic Sports Specialists,sobin_v._orthopaedic_sports_specialists_p.c.pdf,Case Law,US Court,US,UNKNOWN,CourtListener,Public Domain,True,DVT malpractice

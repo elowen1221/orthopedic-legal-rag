@@ -1,5 +1,5 @@
 """
-PDF -> data/medical_segments.csv
+PDF -> data/medical_segments.csv (Paper-ready with Metadata)
 
 用法:
     python src/prepare_medical_data.py
@@ -9,7 +9,7 @@ PDF -> data/medical_segments.csv
     - PyMuPDF 提取文本层
     - 检测并删除跨页重复的页眉/页脚
     - 每 N 页合并为一个中等粒度 segment（不做细粒度 chunk）
-    - 输出 data/medical_segments.csv (UTF-8-SIG)
+    - 输出标准化 metadata 字段
 """
 import re
 import sys
@@ -27,19 +27,30 @@ RAW_DIR = Path("data/medical_raw")
 OUT_CSV = Path("data/medical_segments.csv")
 PAGES_PER_SEGMENT = 4
 
-# 文件名 stem -> (Source, Title)
-# 命中则用映射，未命中则用文件名变形
+# 文件名 stem -> 标准化 Metadata
 FILE_MAP = {
-    "hipfxcpg_2021": ("AAOS_Hip_Fracture_2021", "Management of Hip Fractures in Older Adults"),
-    "hip_fracture_2021": ("AAOS_Hip_Fracture_2021", "Management of Hip Fractures in Older Adults"),
-    "hip_oa_2023": ("AAOS_Hip_OA_2023", "Management of Osteoarthritis of the Hip"),
-    "knee_oa_2021": ("AAOS_Knee_OA_2021", "Management of Osteoarthritis of the Knee"),
+    "hipfxcpg_2021": {
+        "source_id": "AAOS_Hip_Fracture_2021",
+        "title": "Management of Hip Fractures in Older Adults",
+        "organization": "AAOS",
+        "document_type": "Clinical Practice Guideline",
+        "jurisdiction": "US",
+    },
+    "BOAST-FTLPD": {
+        "source_id": "BOA_BOAST_FTLPD",
+        "title": "First-time Lateral Patellar Dislocation",
+        "organization": "BOA",
+        "document_type": "Professional Guideline",
+        "jurisdiction": "UK",
+    },
+    "BOASTCompartmentSyndromeSeptember-2025": {
+        "source_id": "BOA_BOAST_Compartment_Syndrome",
+        "title": "Compartment Syndrome",
+        "organization": "BOA",
+        "document_type": "Professional Guideline",
+        "jurisdiction": "UK",
+    }
 }
-
-
-def filename_to_source(stem: str) -> str:
-    """hip_fracture_2021 -> AAOS_Hip_Fracture_2021"""
-    return "AAOS_" + "_".join(w.capitalize() for w in stem.split("_"))
 
 
 def extract_year(stem: str) -> str:
@@ -48,7 +59,6 @@ def extract_year(stem: str) -> str:
 
 
 def detect_headers_footers(pages, threshold=0.6):
-    """检测在多页重复出现的短行，视为页眉/页脚"""
     counter = Counter()
     n = len(pages)
     for page in pages:
@@ -92,11 +102,14 @@ def main():
     for pdf_path in pdf_files:
         stem = pdf_path.stem
 
-        if stem in FILE_MAP:
-            source, title = FILE_MAP[stem]
-        else:
-            source = filename_to_source(stem)
-            title = stem.replace("_", " ").title()
+        # 获取 Metadata (如果不在映射里，用默认值兜底)
+        meta = FILE_MAP.get(stem, {
+            "source_id": f"UNKNOWN_{stem}",
+            "title": stem.replace("_", " ").title(),
+            "organization": "UNKNOWN",
+            "document_type": "UNKNOWN",
+            "jurisdiction": "UNKNOWN"
+        })
 
         year = extract_year(stem)
 
@@ -106,62 +119,53 @@ def main():
         doc.close()
 
         total_chars = sum(len(p) for p in raw_pages)
-        print(f"\n[{stem}]")
-        print(f"  source: {source}")
-        print(f"  title:  {title}")
-        print(f"  year:   {year}")
-        print(f"  pages:  {n_pages}")
-        print(f"  extracted chars: {total_chars}")
+        print(f"\n[{stem}] -> {meta['source_id']}")
+        print(f"  pages: {n_pages} | chars: {total_chars}")
 
         if total_chars < 100 * n_pages:
-            print("  WARNING: very low text density, PDF may be scanned (no text layer)")
+            print("  WARNING: very low text density, PDF may be scanned.")
 
         drop = detect_headers_footers(raw_pages, threshold=0.6)
-        if drop:
-            print(f"  detected repeated header/footer lines: {len(drop)}")
-
         cleaned = [clean_page_text(p, drop) for p in raw_pages]
 
         n_seg = 0
-        seg_chars = 0
         for start in range(0, n_pages, PAGES_PER_SEGMENT):
             end = min(start + PAGES_PER_SEGMENT, n_pages)
             content = "\n\n".join(cleaned[i] for i in range(start, end) if cleaned[i])
             if not content:
                 continue
+            
+            # 构造统一 schema 的行
             all_rows.append({
-                "Source": source,
-                "Title": title,
+                "chunk_source_id": f"{meta['source_id']}-{n_seg}",
+                "source_id": meta['source_id'],
+                "domain": "medical",
+                "title": meta['title'],
+                "document_type": meta['document_type'],
+                "organization_or_court": meta['organization'],
+                "jurisdiction": meta['jurisdiction'],
+                "year": year,
+                "page_start": start + 1,
+                "page_end": end,
+                "content": content,
+                # 兼容旧版建库脚本所需字段
+                "Source": meta['source_id'],
+                "Title": meta['title'],
                 "Year": year,
-                "Document_Type": "Clinical Practice Guideline",
+                "Document_Type": meta['document_type'],
                 "Page_Start": start + 1,
                 "Page_End": end,
-                "Content": content,
+                "Content": content
             })
             n_seg += 1
-            seg_chars += len(content)
 
-        avg = seg_chars / n_seg if n_seg else 0
         print(f"  segments: {n_seg}")
-        print(f"  avg segment chars: {avg:.0f}")
 
-    df = pd.DataFrame(all_rows, columns=[
-        "Source", "Title", "Year", "Document_Type",
-        "Page_Start", "Page_End", "Content",
-    ])
-
-    empty = df["Content"].str.strip().eq("").sum()
-    print(f"\nempty Content rows: {empty}")
-
+    df = pd.DataFrame(all_rows)
     OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(OUT_CSV, index=False, encoding="utf-8-sig")
 
-    print(f"wrote: {OUT_CSV}")
-    print(f"total rows: {len(df)}")
-    if len(df) > 0:
-        print(f"avg row chars: {df['Content'].str.len().mean():.0f}")
-        print(f"min row chars: {df['Content'].str.len().min()}")
-        print(f"max row chars: {df['Content'].str.len().max()}")
+    print(f"\nwrote: {OUT_CSV} (total rows: {len(df)})")
 
 
 if __name__ == "__main__":

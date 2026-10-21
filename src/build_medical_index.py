@@ -1,8 +1,3 @@
-"""
-建医学知识库 collection。
-用法: python src/build_medical_index.py
-输入: data/medical_segments.csv (列: Source, Content)
-"""
 import os
 import pandas as pd
 from dotenv import load_dotenv
@@ -31,19 +26,29 @@ splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
 
 chunks = []
 for _, row in df.iterrows():
-    for j, chunk in enumerate(splitter.split_text(row["Content"])):
+    # 兼容大小写字段名
+    src_id = row.get("source_id", row.get("Source", ""))
+    content = row.get("content", row.get("Content", ""))
+    
+    for j, chunk in enumerate(splitter.split_text(content)):
         if chunk.strip():
             chunks.append({
-                "source": row["Source"],
+                "source": src_id,
                 "content": chunk,
-                "chunk_id": f"medical:{row['Source']}-{j}",
+                "chunk_id": row.get("chunk_source_id", f"{src_id}-{j}"),
+                "domain": "medical",  # 🌟 强制写入 domain 字段
+                "title": row.get("title", row.get("Title", "")),
+                "organization_or_court": row.get("organization_or_court", row.get("Organization", "")),
+                "year": str(row.get("year", row.get("Year", ""))),
+                "document_type": row.get("document_type", row.get("Document_Type", "")),
+                "page_start": int(row.get("page_start", row.get("Page_Start", 1))),
+                "page_end": int(row.get("page_end", row.get("Page_End", 1)))
             })
 
 print("medical chunks:", len(chunks))
 
 emb = OllamaEmbeddings(model=EMBED_MODEL, base_url=OLLAMA_HOST)
-test_vec = emb.embed_query("test")
-dim = len(test_vec)
+dim = len(emb.embed_query("test"))
 print("embedding dim:", dim)
 
 client = QdrantClient(url=QDRANT_URL)
@@ -64,11 +69,9 @@ for i, c in enumerate(chunks):
     if len(points) >= BATCH:
         client.upsert(collection_name=COLLECTION, points=points)
         points = []
-        print(f"upserted {i+1}/{len(chunks)}")
 
 if points:
     client.upsert(collection_name=COLLECTION, points=points)
 
-info = client.get_collection(COLLECTION)
-print("medical collection points:", info.points_count)
+print("medical collection points:", client.get_collection(COLLECTION).points_count)
 print("done")
