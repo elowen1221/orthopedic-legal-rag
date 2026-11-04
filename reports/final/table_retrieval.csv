@@ -1,0 +1,4 @@
+Mode,Medical Coverage,Legal Coverage,Source Recall@K,Source MRR,Unnecessary Medical,Unnecessary Legal
+ortho_single,96.7%,86.7%,0.919,1.000,0.27,0.11
+dual,100.0%,100.0%,0.985,0.724,1.00,1.00
+routed,100.0%,100.0%,0.985,0.924,0.20,0.00

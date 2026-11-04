@@ -1,0 +1,1262 @@
+[
+  {
+    "question_id": "Q001",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 1,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "BOA_BOAST_FTLPD",
+      "BOA_BOAST_Compartment_Syndrome",
+      "AAOS_Hip_Fracture_2021",
+      "Case_Bender_v_Durrani",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "legal",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 1,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "BOA_BOAST_Compartment_Syndrome",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "BOA_BOAST_FTLPD",
+      "AAOS_Hip_Fracture_2021",
+      "CMS_Informed_Consent"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "legal"
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "BOA_BOAST_Compartment_Syndrome",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 1,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "BOA_BOAST_FTLPD",
+      "AAOS_Hip_Fracture_2021",
+      "BOA_BOAST_Compartment_Syndrome",
+      "Case_Bender_v_Durrani",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "legal",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 1,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "BOA_BOAST_Compartment_Syndrome",
+      "AAOS_Hip_Fracture_2021",
+      "CMS_Informed_Consent",
+      "BOA_BOAST_FTLPD",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "legal",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 1,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "BOA_BOAST_Compartment_Syndrome",
+      "AAOS_Hip_Fracture_2021",
+      "CMS_Informed_Consent",
+      "AAOS_Hip_Fracture_2021",
+      "BOA_BOAST_FTLPD",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "legal",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "question_type": "medical",
+    "medical_required": 1,
+    "legal_required": 0,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "BOA_BOAST_FTLPD",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "BOA_BOAST_Compartment_Syndrome",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 2,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "BOA_BOAST_Compartment_Syndrome",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal"
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 1,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "BOA_BOAST_Compartment_Syndrome",
+      "Case_Bender_v_Durrani"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "medical",
+      "legal"
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 1,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "Case_Bender_v_Durrani",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal"
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "Case_Sobin_v_Orthopaedic",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "Case_Sobin_v_Orthopaedic",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal"
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 1,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "Case_Bender_v_Durrani",
+      "BOA_BOAST_Compartment_Syndrome"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal"
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 1,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "Case_Sobin_v_Orthopaedic",
+      "Case_Sobin_v_Orthopaedic",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "BOA_BOAST_Compartment_Syndrome"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 2,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 1,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "Case_Bender_v_Durrani",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 1,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "Case_Sobin_v_Orthopaedic",
+      "Case_Bender_v_Durrani",
+      "Case_Sobin_v_Orthopaedic",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "Case_Sobin_v_Orthopaedic",
+      "Case_Sobin_v_Orthopaedic",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal"
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 2,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "question_type": "legal",
+    "medical_required": 0,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "CMS_Informed_Consent"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal"
+    ]
+  },
+  {
+    "question_id": "Q031",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "CMS_Informed_Consent",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q032",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 0.5,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q033",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 0.5,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q034",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "CMS_Informed_Consent",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q035",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "BOA_BOAST_Compartment_Syndrome",
+      "Case_Bender_v_Durrani",
+      "Case_Sobin_v_Orthopaedic",
+      "Case_Sobin_v_Orthopaedic",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal"
+    ]
+  },
+  {
+    "question_id": "Q036",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 0.5,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "Case_Sobin_v_Orthopaedic",
+      "BOA_BOAST_Compartment_Syndrome",
+      "Case_Sobin_v_Orthopaedic",
+      "Case_Bender_v_Durrani",
+      "CMS_Informed_Consent",
+      "BOA_BOAST_FTLPD"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "medical",
+      "legal",
+      "legal",
+      "legal",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q037",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 0.3333333333333333,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "BOA_BOAST_Compartment_Syndrome",
+      "AAOS_Hip_Fracture_2021",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "legal",
+      "legal",
+      "legal",
+      "legal"
+    ]
+  },
+  {
+    "question_id": "Q038",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "BOA_BOAST_FTLPD",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "Case_Bender_v_Durrani"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal"
+    ]
+  },
+  {
+    "question_id": "Q039",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "CMS_Informed_Consent",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "legal",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q040",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 0.5,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 0,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "Case_Sobin_v_Orthopaedic",
+      "Case_Sobin_v_Orthopaedic",
+      "Case_Bender_v_Durrani",
+      "Case_Sobin_v_Orthopaedic",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "legal"
+    ]
+  },
+  {
+    "question_id": "Q041",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "BOA_BOAST_Compartment_Syndrome",
+      "CMS_Informed_Consent",
+      "Case_Bender_v_Durrani"
+    ],
+    "retrieved_domains": [
+      "legal",
+      "legal",
+      "legal",
+      "medical",
+      "legal",
+      "legal"
+    ]
+  },
+  {
+    "question_id": "Q042",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 0.5,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q043",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "BOA_BOAST_FTLPD",
+      "CMS_Informed_Consent",
+      "CMS_Informed_Consent",
+      "Case_Bender_v_Durrani",
+      "Case_Bender_v_Durrani",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "legal",
+      "legal",
+      "legal",
+      "legal",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q044",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 0.5,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 0,
+    "retrieved_sources": [
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical",
+      "medical"
+    ]
+  },
+  {
+    "question_id": "Q045",
+    "question_type": "cross",
+    "medical_required": 1,
+    "legal_required": 1,
+    "source_recall": 1.0,
+    "mrr": 1.0,
+    "unnec_med": 0,
+    "unnec_leg": 0,
+    "med_covered": 1,
+    "leg_covered": 1,
+    "retrieved_sources": [
+      "BOA_BOAST_Compartment_Syndrome",
+      "AAOS_Hip_Fracture_2021",
+      "Case_Bender_v_Durrani",
+      "Case_Sobin_v_Orthopaedic",
+      "BOA_BOAST_FTLPD",
+      "AAOS_Hip_Fracture_2021"
+    ],
+    "retrieved_domains": [
+      "medical",
+      "medical",
+      "legal",
+      "legal",
+      "medical",
+      "medical"
+    ]
+  }
+]

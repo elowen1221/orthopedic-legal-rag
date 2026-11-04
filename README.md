@@ -242,3 +242,7 @@ License / Disclaimer
 This is a research prototype.
 
 Not for clinical use.
+
+## Limitations & Future Work
+
+- **Answer-level factuality evaluation** is computationally resource-intensive. Local LLM-as-a-judge inference was unstable on the available hardware. Consequently, answer-level claim-support evaluation is excluded from the primary paper metrics and is left for future supplementary analysis.

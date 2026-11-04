@@ -13,11 +13,11 @@ OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 EMBED_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
 LLM_MODEL = os.getenv("OLLAMA_MODEL", "llama3.1:8b")
 
-# ---------- 四个独立 collection ----------
-RAVEN_LEGAL_COLLECTION = "cfr493"        # baseline 用
-MEDICAL_COLLECTION = "medical"           # dual 医学侧
-ORTHO_LEGAL_COLLECTION = "legal_ortho"   # dual 法律侧
-ORTHO_SINGLE_COLLECTION = "ortho_single" # single-pool baseline
+# ---------- 独立 collection ----------
+RAVEN_LEGAL_COLLECTION = "cfr493"
+MEDICAL_COLLECTION = "medical"
+ORTHO_LEGAL_COLLECTION = "legal_ortho"
+ORTHO_SINGLE_COLLECTION = "ortho_single"
 
 emb = OllamaEmbeddings(model=EMBED_MODEL, base_url=OLLAMA_HOST)
 client = QdrantClient(url=QDRANT_URL)
@@ -37,11 +37,10 @@ If the question is not about medical-legal matters, say you only answer such que
 
 
 # ============================================================
-#  Part 0: 原生 Ollama 调用（解决 LangChain 的 404 Bug）
+#  Part 0: 原生 Ollama 调用
 # ============================================================
 
 def call_ollama_llm(system_prompt: str, user_prompt: str) -> str:
-    """使用 requests 直接请求 Ollama，极其稳定，不受库版本影响"""
     url = f"{OLLAMA_HOST}/api/chat"
     payload = {
         "model": LLM_MODEL,
@@ -52,11 +51,10 @@ def call_ollama_llm(system_prompt: str, user_prompt: str) -> str:
         "stream": False,
         "options": {
             "temperature": 0,
-            "num_predict": 512  # 限制输出长度，防止长文本生成卡死
+            "num_predict": 512
         }
     }
     try:
-        # 将 timeout 延长到 300 秒，避免长上下文生成超时
         r = requests.post(url, json=payload, timeout=300)
         r.raise_for_status()
         return r.json()["message"]["content"]
@@ -139,6 +137,7 @@ def classify_evidence_requirements(question: str) -> dict:
         "medical_required": True,
         "legal_required": True,
         "reason": "fallback: classification failed, default to dual",
+        "router_fallback": True
     }
 
     try:
@@ -161,9 +160,15 @@ def classify_evidence_requirements(question: str) -> dict:
             "medical_required": True,
             "legal_required": True,
             "reason": "fallback: both false from LLM, default to dual",
+            "router_fallback": True
         }
 
-    return {"medical_required": med, "legal_required": leg, "reason": reason}
+    return {
+        "medical_required": med,
+        "legal_required": leg,
+        "reason": reason,
+        "router_fallback": False
+    }
 
 
 # ============================================================
@@ -247,29 +252,11 @@ def ask(question, mode="baseline", k=5, k_medical=3, k_legal=3, k_single=6):
 {question}
 </User query>"""
 
-    # 关键修改：即使 LLM 超时报错，也要把检索到的证据返回给前端，不让页面崩溃
     try:
         ans = call_ollama_llm(SYSTEM, user_prompt)
     except Exception as e:
-        ans = f"⚠️ **回答生成超时或被中断**：{e}\n\n但上方的检索证据是完好的，请参考证据进行判断。"
+        ans = f"⚠️ **回答生成失败**：{e}\n\n上方检索到的证据依然有效，请参考上方证据。"
 
     if mode == "routed":
         return ans, results, routing
     return ans, results
-
-
-if __name__ == "__main__":
-    import sys
-    mode = sys.argv[1] if len(sys.argv) > 1 else "baseline"
-    q = " ".join(sys.argv[2:]) or "Can I refer proficiency testing samples to another lab?"
-    print(f"mode={mode}\nQ: {q}\n" + "=" * 80)
-    
-    if mode == "routed":
-        ans, results, routing = ask(q, mode=mode)
-        print("Routing:", json.dumps(routing, ensure_ascii=False))
-    else:
-        ans, results = ask(q, mode=mode)
-        
-    print("=" * 80 + "\n" + ans + "\n\n--- Sources ---")
-    for r in results:
-        print(f"  [{r['domain']}] {r['similarity_score']:.4f}  {r['source']}")
